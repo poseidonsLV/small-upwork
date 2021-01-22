@@ -1,0 +1,88 @@
+.moreAboutJob {
+  width: 80vw;
+  margin: 20px auto;
+  max-width: 1000px;
+  border: 1px solid rgb(209, 209, 209);
+}
+.moreAboutJob-section {
+  border-bottom: 1px solid rgb(209, 209, 209);
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.moreAboutJob-description {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: darkslategrey;
+}
+.moreAboutJob h2 {
+  text-transform: uppercase;
+  color: rgb(54, 54, 54);
+}
+.moreAboutJob-features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.moreAboutJob-features .features-container {
+  display: flex;
+  max-width: 150px;
+  font-size: smaller;
+  max-width: 140px;
+  min-width: 140px;
+  margin: 20px 40px;
+}
+.features-container i {
+  margin-right: 10px;
+  margin-top: 3px;
+}
+.header p {
+  font-weight: bold;
+}
+.header span {
+  color: gray;
+}
+.header-span-laterUnhidden {
+  display: none;
+}
+.projectType p {
+  font-size: 0.9rem;
+}
+.projectType p strong {
+  margin-right: 10px;
+}
+#goBackButton {
+  padding: 7px 20px;
+  background: rgb(43, 191, 43);
+  font-size: 16px;
+  color: white;
+  border-radius: 8px;
+  right: 20px;
+  font-weight: 550;
+  border: 1px solid gray;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+#goBackButton:hover {
+  background: rgb(37, 206, 37);
+}
+@media (max-width: 1024px) {
+  .moreAboutJob-section {
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+  }
+  .moreAboutJob-section button {
+    margin: 10px 0;
+  }
+  .header-span-laterHidden {
+    display: none;
+  }
+  .header-span-laterUnhidden {
+    display: block;
+  }
+  .moreAboutJob-features .features-container {
+    margin: 20px 20px;
+  }
+}

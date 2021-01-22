@@ -1,0 +1,48 @@
+.jobs {
+  width: 80vw;
+  max-width: 1200px !important;
+  min-width: 55%;
+  margin: 40px auto;
+}
+.jobs-header {
+  border: 1px solid rgb(214, 213, 213);
+  display: flex;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  justify-content: space-between;
+  padding: 20px;
+}
+.jobs-header h2 {
+  color: darkslategray;
+}
+.jobs-sort {
+  display: flex;
+  align-items: center;
+}
+.jobs-sort p {
+  margin: 0 20px;
+  font-weight: 800;
+}
+.jobs-sort select {
+  border: 1px solid gray;
+  padding: 5px 30px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .jobs-header {
+    flex-direction: column;
+    display: block;
+    text-align: center;
+  }
+  .jobs-header .jobs-sort {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .jobs-sort p {
+    display: none;
+  }
+}

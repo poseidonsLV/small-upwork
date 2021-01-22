@@ -1,0 +1,96 @@
+.mobileHeader {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1d4354;
+  height: 60px;
+  width: 100%;
+  color: white;
+}
+.nav-burger {
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  padding: 5px;
+}
+.burger-line {
+  margin: 2px 0;
+  width: 30px;
+  background: white;
+  height: 4px;
+  border-radius: 5px;
+  transition: all 1s;
+}
+.nav-burger.active .burger-line.middle {
+  transform: translateX(65px);
+  opacity: 0;
+}
+.nav-burger.active .burger-line.bottom {
+  transform: rotate(45deg) translateY(-5.5px) translateX(-5px);
+}
+.nav-burger.active .burger-line.top {
+  transform: rotate(-45deg) translateY(6px) translateX(-5px);
+}
+/* The side navigation menu */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #1d4354;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.sidenav-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* The navigation menu links */
+.sidenav a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 15px 0;
+  border-bottom: 1px solid #336278;
+  transition: 0.15s;
+}
+.sidenav a:hover {
+  color: limegreen;
+}
+.sidenav-links {
+  border-top: 1px solid white;
+  margin: 20px;
+}
+
+.sidenav-header .nav-burger {
+  position: absolute;
+  padding: 0;
+  right: 25px;
+  font-size: 36px;
+  cursor: pointer;
+}
+.header-search {
+  width: 95%;
+  margin: 0 auto;
+}
+.header-search input {
+  width: 93%;
+  border-radius: 20px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1025px) {
+  .mobileHeader {
+    display: none;
+  }
+}

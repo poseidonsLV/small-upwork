@@ -1,0 +1,84 @@
+.job {
+  border: 1px solid rgb(214, 213, 213);
+}
+.job a {
+  text-decoration: none;
+  color: black;
+  cursor: default;
+}
+.job-container {
+  border-radius: 7px;
+  padding: 20px;
+  border-bottom: 1px solid rgb(214, 213, 213);
+}
+.job-info {
+  display: flex;
+  flex-direction: column;
+}
+.job-info-row1 {
+  flex-direction: row;
+  display: flex;
+}
+.job-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#deleteJob {
+  opacity: 0;
+  color: red;
+  transition: opacity 0.5s;
+}
+.job-container:hover #deleteJob {
+  opacity: 1;
+  cursor: pointer;
+}
+.job-header p {
+  font-size: smaller;
+  color: dimgrey;
+}
+.job-header h4 {
+  cursor: pointer;
+  margin-bottom: 2px;
+  font-size: large;
+  color: #37a000;
+}
+.job-info .col {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 200px;
+}
+.job-info .col b {
+  font-size: smaller;
+  font-weight: 700;
+}
+.job-info .col p {
+  font-size: smaller;
+  color: dimgrey;
+}
+.job-description {
+  word-wrap: break-word;
+  font-size: 0.9rem;
+}
+.job-tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 15px;
+}
+.job-tags #job-tags-item {
+  transition: all 0.2s;
+  padding: 8px 15px;
+  color: dimgray;
+  line-height: 8px;
+  font-weight: 600;
+  margin: 0 8px;
+  margin-bottom: 5px;
+  border-radius: 15px;
+  font-size: smaller;
+  cursor: pointer;
+}
+#job-tags-item:hover {
+  color: white;
+  background: #008329;
+}
